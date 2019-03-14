@@ -1,3 +1,4 @@
 import * as styles from "./styles"
+import { HomeHeder, PageHeder } from "./Header"
 
-export { styles }
+export { styles, HomeHeder, PageHeder }

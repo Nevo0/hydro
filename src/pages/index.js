@@ -4,11 +4,13 @@ import React from "react"
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
+import { HomeHeder } from "../utils"
+import img from "../images/index.png"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h3>Hello from gatsby</h3>
+    <HomeHeder img={img}>Hello from header></HomeHeder>
   </Layout>
 )
 
