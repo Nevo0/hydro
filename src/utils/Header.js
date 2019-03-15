@@ -13,7 +13,7 @@ function PageHeder({ img, children }) {
 const IndexHeader = styled.header`
   min-height: calc(100vh - 72px);
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(${props => props.img}) center fixed no-repeat;
+    url(${props => props.img}) center/cover fixed no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
