@@ -4,13 +4,17 @@ import React from "react"
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
-import { PageHeder } from "../utils"
+import { PageHeder, Banner } from "../utils"
 import img from "../images/about.png"
 
 const AboutPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <PageHeder img={img}>Hello from PageHeder></PageHeder>
+    <PageHeder img={img}>
+      <PageHeder img={img}>
+        <Banner title={"O nas"} subTitle={"onas"} />
+      </PageHeder>
+    </PageHeder>
   </Layout>
 )
 

@@ -4,13 +4,23 @@ import React from "react"
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
-import { HomeHeder } from "../utils"
+import { HomeHeder, Banner, BunnerButton } from "../utils"
 import img from "../images/index.png"
+import QuickInfo from "../components/HomePageComponents/QuickInfo"
+// import Banner from "../utils/Banner"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <HomeHeder img={img}>Hello from header></HomeHeder>
+    <HomeHeder img={img}>
+      <Banner
+        title={"Wojciech Tarnawski"}
+        subTitle={"Olkuska 92, 32-085 Szyce"}
+      >
+        <BunnerButton style={{ margin: "2rem auto" }}>menu</BunnerButton>
+      </Banner>
+    </HomeHeder>
+    <QuickInfo />
   </Layout>
 )
 

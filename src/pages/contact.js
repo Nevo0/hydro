@@ -4,10 +4,8 @@ import React from "react"
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
-import { PageHeder } from "../utils"
-import img from "../images/about.png"
 import Map from "../components/global/mapbox"
-import ReactMapboxGl, { Layer, Feature } from "react-mapbox-gl"
+import { Layer, Feature } from "react-mapbox-gl"
 
 const ContactPage = props => {
   console.log(Map)

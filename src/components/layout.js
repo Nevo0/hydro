@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Navbar from "../components/global/navbar"
+import Footer from "../components/global/Footer"
 import { createGlobalStyle } from "styled-components"
 
 // import "./bootstrap.min.css"
@@ -12,6 +13,7 @@ const Layout = ({ children }) => {
       <GlobalStyle />
       <Navbar />
       {children}
+      <Footer />
     </React.Fragment>
   )
 }
